@@ -1,0 +1,29 @@
+{
+  "name": "prisma",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && mkdir -p dist/prisma && cp src/prisma/contract.json dist/prisma/contract.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@prisma/composer": "0.40.0",
+    "@prisma/composer-prisma-cloud": "0.40.0",
+    "@prisma/orm-postgres": "8.0.0-rc.25",
+    "effect": "4.1.4",
+    "pg": "^8.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/pg": "^8.20.0",
+    "prisma": "8.0.0-rc.35",
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "effect": "4.1.4",
+    "@effect/platform-bun": "4.1.4",
+    "@effect/platform-node": "4.1.4",
+    "@effect/platform-node-shared": "4.1.4"
+  }
+}
