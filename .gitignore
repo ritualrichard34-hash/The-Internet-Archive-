@@ -2,3 +2,4 @@ node_modules/
 dist/
 .prisma-composer/
 .alchemy/
+npx plugins add prisma/prisma-plugin
